@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !\.(ico|gif|png|jpg|svg|woff|eot|eoff|jpeg|bmp|css|js)$
+RewriteCond %{REQUEST_FILENAME} !(router.php)
+RewriteRule .* router.php

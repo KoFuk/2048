@@ -1,1 +1,3 @@
 .sass-cache/
+/.idea
+/db/app.db
