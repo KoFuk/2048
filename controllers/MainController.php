@@ -13,7 +13,7 @@ function game()
     }
     $sql = opensqlite();
     $best = $sql->query('SELECT `value` FROM `user_state` WHERE `key` = \'bestScore\''
-        . ' ORDER BY `value` ASC LIMIT 1')->fetchArray();
+        . ' ORDER BY CAST(`value` AS INTEGER) DESC LIMIT 1')->fetchArray();
     if (!$best) {
         $VAR['best_score'] = '0';
     } else {
@@ -103,7 +103,7 @@ function statistic()
     global $VAR;
     $sql = opensqlite();
     $result = $sql->query('SELECT * FROM `user_state`'
-        . ' WHERE `key` = \'bestScore\' ORDER BY `value` ASC');
+        . ' WHERE `key` = \'bestScore\' ORDER BY CAST(`value` AS INTEGER) DESC');
     $data = [];
     while (($row = $result->fetchArray()) !== false) {
         array_push($data, ['username' => $row['username'], 'score' => $row['value']]);
