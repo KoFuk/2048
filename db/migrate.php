@@ -7,6 +7,7 @@ function migrate(SQLite3 $sql)
         . '`password` VARCHAR(60) NOT NULL)');
     $sql->exec('CREATE TABLE IF NOT EXISTS `user_state`('
         . '`username` VARCHAR(10) NOT NULL,'
-        . '`key` VARCHAR(10) NOT NULL UNIQUE,'
-        . '`value` VARCHAR(4096) NOT NULL UNIQUE)');
+        . '`key` VARCHAR(10) NOT NULL,'
+        . '`value` VARCHAR(4096) NOT NULL,'
+        . 'UNIQUE(`username`,`key`))');
 }

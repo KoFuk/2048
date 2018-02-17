@@ -30,7 +30,7 @@ function storage()
         $value = $_POST['value'];
         $sql = opensqlite();
         $stmt = $sql->prepare('DELETE FROM `user_state`'
-            . ' WHERE username = :name AND key = :state_key');
+            . ' WHERE `username` = :name AND `key` = :state_key');
         $stmt->bindValue(':name', $username);
         $stmt->bindValue(':state_key', $key);
         $stmt->execute();
