@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Sign in - 2048</title>
+    <title>Statistics - 2048</title>
 
     <link href="style/main.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.ico">

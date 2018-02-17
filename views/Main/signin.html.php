@@ -32,7 +32,7 @@
     <h2>Sign in to the Game</h2>
     <?php if ($login_failure) { ?>
         <div style="color: red; margin: 10px">
-            Failed to login. Please try again.
+            Failed to sign in. Please try again.
         </div>
     <?php } ?>
     <form action="session" method="post">
@@ -46,7 +46,7 @@
     </form>
     <p>
         You don't have an account? <a href="signup">Sign up</a> here.<br>
-        ..Or <a href="game">continue</a> without logging in.
+        ..Or <a href="game">continue</a> without signing in.
     </p>
 </div>
 </body>
