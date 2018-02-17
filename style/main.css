@@ -204,45 +204,55 @@ hr {
     box-sizing: border-box;
 }
 
-.stat-row {
+.stat-top {
+    align-items: baseline;
+    display: flex;
     margin-top: 40px;
-    position: relative;
     padding: 8px;
-    cursor: default;
-    -webkit-touch-callout: none;
-    -ms-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -ms-touch-action: none;
-    touch-action: none;
+    background: #80766e;
+    border-radius: 6px;
+    width: 500px;
+    font-size: 25px;
+    color: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.stat-row {
+    align-items: baseline;
+    display: flex;
+    margin-top: 20px;
+    padding: 8px;
     background: #bbada0;
     border-radius: 6px;
     width: 500px;
     font-size: 25px;
-    color: wheat;
+    color: white;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .stat-rank {
+    width: 20%;
     font-size: 25px;
     justify-content: space-between;
 }
 
 .stat-username {
+    width: 50%;
     font-size: 20px;
     justify-content: space-between;
 }
 
 .stat-score {
+    width: 30%;
     font-size: 20px;
     justify-content: space-between;
 }
 
 .stat-container {
-    display: flex;
 }
 
 .game-container .game-message {

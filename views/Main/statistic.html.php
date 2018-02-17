@@ -30,12 +30,17 @@
 <h2>Statistics</h2>
 <div class="container">
     <div class="stat-container">
+        <div class="stat-top">
+            <div class="stat-rank">Rank</div>
+            <div class="stat-username">Username</div>
+            <div class="stat-score">Score</div>
+        </div>
         <?php for ($i = 0; $i < sizeof($data); $i++) { ?>
             <?php $d = $data[$i] ?>
             <div class="stat-row">
-                <span class="stat-rank"><?php echo $i + 1 ?></span>
-                <span class="stat-username"><?php echo $d['username'] ?></span>
-                <span class="stat-score"><?php echo $d['score'] ?></span>
+                <div class="stat-rank"><?php echo $i + 1 ?></div>
+                <div class="stat-username"><?php echo $d['username'] ?></div>
+                <div class="stat-score"><?php echo $d['score'] ?></div>
             </div>
         <?php } ?>
     </div>
